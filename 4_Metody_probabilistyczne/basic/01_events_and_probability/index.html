@@ -2463,7 +2463,8 @@ P(H) = \frac{1}{2}
 <hr />
 <h2 id="task-3-drawing-cards">Task 3 — Drawing Cards</h2>
 <p>Consider an experiment consisting of drawing cards from a <strong>standard 52-card deck</strong>.</p>
-<p>The order of outcomes matters.</p>
+<p>The order of outcomes matters.
+Treat each outcome as an <strong>ordered sequence</strong> of drawn cards.</p>
 <ol>
 <li>Define the <strong>sample space</strong> <span class="arithmatex">\(\Omega_1\)</span> for <strong>drawing one card</strong>.</li>
 <li>Construct the <strong>sample space</strong> <span class="arithmatex">\(\Omega_2\)</span> for <strong>two consecutive draws with replacement</strong>.</li>
@@ -2507,7 +2508,8 @@ The distance between neighboring lines is <span class="arithmatex">\(d\)</span>.
 <p>the <strong>orientation angle</strong> of the needle.</p>
 </li>
 <li>
-<p>Express the sample space <span class="arithmatex">\(\Omega\)</span> as a <strong>set of possible values of these variables</strong>.</p>
+<p>Express the sample space <span class="arithmatex">\(\Omega\)</span> as a <strong>set of possible values of these variables</strong>.
+   (You may restrict to <span class="arithmatex">\(x \in [0, \tfrac{d}{2}]\)</span> for the distance of the needle's center from the nearest line and <span class="arithmatex">\(\theta \in [0, \tfrac{\pi}{2}]\)</span> for the angle, using symmetry.)</p>
 </li>
 <li>
 <p>Briefly explain why the sample space in this experiment is <strong>continuous</strong>, unlike the sample spaces in the previous tasks.</p>
@@ -2587,7 +2589,7 @@ The distance between neighboring lines is <span class="arithmatex">\(d\)</span>.
 <p>Finally, define <strong>one additional event</strong> on <span class="arithmatex">\(\Omega_3\)</span> and compute its probability.</p>
 <h2 id="task-8-events-and-probabilities-in-card-drawing">Task 8 — Events and Probabilities in Card Drawing</h2>
 <p>Refer to <strong>Task 3</strong>, where the sample spaces for drawing cards from a standard 52-card deck were defined.</p>
-<p>Assume that all cards are <strong>equally likely</strong> to be drawn.</p>
+<p>Assume the deck is <strong>well-shuffled</strong>. In each experiment, every <strong>ordered sequence of draws</strong> is <strong>equally likely</strong> (with or without replacement as specified).</p>
 <p>First assign probabilities to all <strong>elementary outcomes</strong> in the sample spaces:</p>
 <ul>
 <li><span class="arithmatex">\(\Omega_1\)</span> (one card drawn),</li>
@@ -2629,8 +2631,7 @@ The distance between neighboring lines is <span class="arithmatex">\(d\)</span>.
 <li>Cloudy (<span class="arithmatex">\(C\)</span>)</li>
 <li>Rainy (<span class="arithmatex">\(R\)</span>)</li>
 </ul>
-<p>Assume that all elementary outcomes in <span class="arithmatex">\(\Omega_7\)</span> are <strong>equally likely</strong>.</p>
-<p>Assume that the weather on each day is independent and each of the three states occurs with probability <span class="arithmatex">\(\frac{1}{3}\)</span>.</p>
+<p>Model the weather as <strong>7 independent days</strong>, where each of the three states occurs with probability <span class="arithmatex">\(\frac{1}{3}\)</span>.</p>
 <p>Describe the following events as subsets of <span class="arithmatex">\(\Omega_7\)</span> and compute their probabilities.</p>
 <hr />
 <h3 id="events">Events</h3>
@@ -2658,7 +2659,7 @@ The distance between neighboring lines is <span class="arithmatex">\(d\)</span>.
 <p>Refer to <strong>Task 5</strong>, where the sample space <span class="arithmatex">\(\Omega\)</span> of Buffon's needle experiment was defined.</p>
 <p>A needle of length <span class="arithmatex">\(L\)</span> is thrown randomly onto a plane with equally spaced parallel lines.<br />
 The distance between neighboring lines is <span class="arithmatex">\(d\)</span>.</p>
-<p>Assume that the position of the needle's center (relative to the nearest line) and its orientation angle are <strong>uniformly distributed</strong> (independently).</p>
+<p>Assume <span class="arithmatex">\(L \le d\)</span>. Let <span class="arithmatex">\(X \in [0, \tfrac{d}{2}]\)</span> be the distance from the needle's center to the nearest line and <span class="arithmatex">\(\theta \in [0, \tfrac{\pi}{2}]\)</span> the angle between the needle and the lines. Assume <span class="arithmatex">\(X\)</span> and <span class="arithmatex">\(\theta\)</span> are independent and <strong>uniformly distributed</strong> on these intervals.</p>
 <p>Describe the following events and compute their probabilities.</p>
 <hr />
 <h3 id="events_1">Events</h3>
