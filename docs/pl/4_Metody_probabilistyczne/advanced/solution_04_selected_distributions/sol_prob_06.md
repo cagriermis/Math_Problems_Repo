@@ -1,114 +1,67 @@
 # Problem 6 — Final Discussion: The Axiomatic Point of View
 
-## The Axiomatic Formulation of Probability
-
-Probability can be formalized as a mathematical function that assigns a number to each event in a sample space. This idea generalizes the notion of observed frequencies from repeated experiments and provides a consistent theoretical framework.
-
-The modern formulation is based on the Kolmogorov axioms.
-
----
+Probability can be understood as a function that assigns a number to each event, extending the idea of observed frequencies from repeated experiments.
 
 ## Kolmogorov Axioms
 
-Let Ω be a sample space and let A, B, ... be events (subsets of Ω). A probability measure P satisfies:
+A probability measure P satisfies:
 
-1. **Non-negativity**  
-   \[
-   P(A) \ge 0 \quad \text{for every event } A
-   \]
+1. P(A) ≥ 0 for every event A (non-negativity)
+2. P(Ω) = 1 (normalization)
+3. For disjoint events A and B:
+   P(A ∪ B) = P(A) + P(B)
 
-2. **Normalization**  
-   \[
-   P(\Omega) = 1
-   \]
-
-3. **Countable additivity**  
-   For any sequence of pairwise disjoint events \( A_1, A_2, A_3, \dots \):
-   \[
-   P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)
-   \]
+More generally, for countably many disjoint events:
+   P(⋃ A_i) = Σ P(A_i)
 
 ---
 
-## Connection with Earlier Work
+## Relation to Earlier Work
 
-In the previous problems, we worked with:
+From previous problems, we defined:
 
-- elementary outcomes and events,
-- observed frequencies from repeated experiments,
-- functions of the form \( f(A) = \frac{n(A)}{N} \).
+f(A) = n(A) / N
 
-From this framework, several properties naturally appeared:
+This naturally satisfies:
 
-### 1. Non-negativity
+- f(A) ≥ 0 (counts are non-negative)
+- f(Ω) = 1 (total outcomes divided by total trials)
+- f(A ∪ B) = f(A) + f(B) for disjoint A, B (no overlap in counting)
 
-Observed frequencies are always non-negative because counts cannot be negative:
-
-\[
-f(A) = \frac{n(A)}{N} \ge 0
-\]
+Thus, non-negativity, normalization, and finite additivity arise directly from observed frequencies.
 
 ---
 
-### 2. Normalization
+## What Goes Beyond
 
-The total number of outcomes equals the total number of trials:
+In earlier problems, we only worked with:
 
-\[
-f(\Omega) = \frac{N}{N} = 1
-\]
+- finite sample spaces
+- finite sums of events
 
----
+However, the Kolmogorov axioms require **countable additivity**, which involves infinitely many events.
 
-### 3. Finite Additivity
+This cannot be derived from experiments, since:
 
-For disjoint events A and B:
-
-\[
-f(A \cup B) = f(A) + f(B)
-\]
-
-This follows directly from counting, since disjoint events do not overlap.
+- real experiments are always finite
+- we cannot observe infinitely many trials or events
 
 ---
 
-## What Goes Beyond Finite Experiments
+## Key Insight
 
-While non-negativity, normalization, and finite additivity arise naturally from observed data, the third Kolmogorov axiom — **countable additivity** — is more subtle.
+Finite additivity comes from counting.
 
-In our earlier work:
-
-- we only considered **finite sample spaces**,
-- and **finite unions of events**.
-
-However, countable additivity involves:
-
-- potentially infinite collections of events,
-- limits of sequences of events,
-- situations that cannot be directly observed through finite experiments.
-
----
-
-## Why Countable Additivity Is More Subtle
-
-Finite experiments can only produce finite data. Therefore:
-
-- we can verify additivity for a finite number of disjoint events,
-- but we cannot experimentally verify infinite sums.
-
-Countable additivity is introduced as a **mathematical principle** that ensures:
-
-- consistency of probability in infinite settings,
-- proper behavior of limits,
-- compatibility with more advanced constructions (e.g., continuous distributions).
+Countable additivity is an additional mathematical assumption that ensures consistency when dealing with infinite collections of events.
 
 ---
 
 ## Conclusion
 
-The axiomatic approach to probability extends the intuitive ideas obtained from observed frequencies into a rigorous mathematical theory.
+Probability theory generalizes observed frequencies into a mathematical model:
 
-- Non-negativity, normalization, and finite additivity arise naturally from counting and experimentation.
-- Countable additivity goes beyond empirical observation and reflects a deeper structural requirement of the theory.
+- elementary outcomes → define events  
+- observed frequencies → suggest properties  
+- axioms → formalize these properties  
 
-Thus, probability can be understood as a bridge between empirical data and abstract mathematics.
+Non-negativity, normalization, and finite additivity come from experiments, while countable additivity extends the theory beyond finite observations.
